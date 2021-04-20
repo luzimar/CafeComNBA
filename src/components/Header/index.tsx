@@ -6,6 +6,7 @@ export function Header() {
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
                 <img src="/images/logo_header.svg" alt="Café com NBA"/>
+                <span />
                 <nav>
                     <a className={styles.active}>Home</a>
                     <a>Posts</a>

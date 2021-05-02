@@ -21,7 +21,7 @@ export default function Home({ product }: HomeProps) {
         <title>Inicio | Café com NBA</title>
       </Head>
       
-        { session ? (
+        {/* { session ? (
           <main className={styles.containerLoggedUser}>
             <section className={styles.heroLoggedUser}>
               <img src={session.user.image} alt={session.user.name}/>
@@ -54,7 +54,24 @@ export default function Home({ product }: HomeProps) {
             </section>
             <img src="/images/logo_home.svg" alt="Café com NBA"/>
             </main>
-        )}
+        )} */}
+
+          <main className={styles.container}>
+            <section className={styles.hero}>
+              <span>🤾‍♂️ Olá, bem vindo ao Café com NBA</span>
+              <h1>
+                Fique por dentro de tudo que acontece na <span>NBA</span>
+              </h1>
+
+              <p>
+                Tenha acesso a todo o conteúdo<br />
+                <span>por apenas {product.amount}/mês</span>
+              </p>
+
+              <SubscribeButton />
+            </section>
+            <img src="/images/logo_home.svg" alt="Café com NBA"/>
+            </main>
     </>
   )
 }
